@@ -161,11 +161,11 @@
                                             </a>
                                             <hr>
                                             <div class="text-center">
-                                                <a class="small" href="forgot-password.html">Lupa Kata Sandi?</a>
+                                                <a class="small" href="register.php">Create an Account!</a>
                                             </div>
                                             <div class="text-center">
                                                 <a class="small" href="landing.php">Kembali Ke Landing Page!</a>
-                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
