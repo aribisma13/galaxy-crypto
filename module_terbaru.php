@@ -303,117 +303,6 @@
                     </div>
                 </div>
 
-                <!-- Page Heading -->
-                <div style="text-align: center;">
-                    <h1 class="h3 mb-2 text-gray-800">Module Terfavorit</h1>
-                </div>
-
-                <div class="container px-5 px-lg-3 mt-5">
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image -->
-                                <img class="card-img-top" src="assets/img/bg-module-5.jpg" alt="Kelas Trader & Investment" />
-                                <!-- Product details -->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name -->
-                                        <h5 class="fw-bolder">Kelas Trader & Investment</h5>
-                                        <!-- Product price -->
-                                        Rp. 250.000
-                                    </div>
-                                </div>
-                                <!-- Product actions -->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal1">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
-                                <img class="card-img-top" src="assets/img/bg-module-2.jpg" alt="Kelas Middle" />
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <h5 class="fw-bolder">Kelas Middle</h5>
-                                        <span class="text-muted text-decoration-line-through">Rp. 180.000</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal2">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
-                                <img class="card-img-top" src="assets/img/bg-module-3.jpg" alt="Kelas Profesional" />
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <h5 class="fw-bolder">Kelas Profesional</h5>
-                                        <span class="text-muted text-decoration-line-through">Rp. 400.000</span>
-                                    </div>
-                                </div>
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal3">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <img class="card-img-top" src="assets/img/bg-module-4.jpg" alt="Kelas Premium" />
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <h5 class="fw-bolder">Kelas Premium</h5>
-                                        Rp. 500.000
-                                    </div>
-                                </div>
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal Structure -->
-                <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Kelas Beginner</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="assets/img/bg-module-1.jpg" class="img-fluid mb-3" alt="Kelas Beginner" />
-                                <h5>Harga: Rp. 150.000</h5>
-                                <p>Deskripsi:
-                                    <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
-                                <P>Keuntungan:</P>
-                                    <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
-                                    <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
-                                    <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
-                                    <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Tambahkan CSS di bagian head atau dalam file CSS Anda -->
                 <style>
                     .modal-body img {
@@ -494,6 +383,210 @@
                             <div class="modal-body">
                                 <img src="assets/img/bg-module-4.jpg" class="img-fluid" alt="Kelas Premium" />
                                 <h5>Harga: Rp. 400.000</h5>
+                                <p>Deskripsi:
+                                    <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <P>Keuntungan:</P>
+                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
+                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
+                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
+                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Heading -->
+                <div style="text-align: center;">
+                    <h1 class="h3 mb-2 text-gray-800">Module Terfavorit</h1>
+                </div>
+
+                <div class="container px-5 px-lg-3 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image -->
+                                <img class="card-img-top" src="assets/img/bg-module-5.jpg" alt="Kelas Trader & Investment" />
+                                <!-- Product details -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name -->
+                                        <h5 class="fw-bolder">Kelas Trader & Investment</h5>
+                                        <!-- Product price -->
+                                        Rp. 250.000
+                                    </div>
+                                </div>
+                                <!-- Product actions -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal5">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/bg-module-6.jpg" alt="Kelas Learn About Cryptocurrency" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Kelas Learn About Cryptocurrency</h5>
+                                        <span class="text-muted text-decoration-line-through">Rp. 380.000</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal6">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <img class="card-img-top" src="assets/img/bg-module-7.jpg" alt="Kelas Web3 Crypto" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Kelas Web3 Crypto</h5>
+                                        <span class="text-muted text-decoration-line-through">Rp. 390.000</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal7">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="assets/img/bg-module-8.jpg" alt="Kelas Blockchain Cryptocurrency" />
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Kelas Blockchain Cryptocurrency</h5>
+                                        Rp. 800.000
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal8">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Structure -->
+                <div class="modal fade" id="productModal5" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Kelas Trader & Investment</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/bg-module-5.jpg" class="img-fluid mb-3" alt="Kelas Beginner" />
+                                <h5>Harga: Rp. 250.000</h5>
+                                <p>Deskripsi:
+                                    <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
+                                <P>Keuntungan:</P>
+                                    <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
+                                    <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
+                                    <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
+                                    <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tambahkan CSS di bagian head atau dalam file CSS Anda -->
+                <style>
+                    .modal-body img {
+                        margin-bottom: 15px;
+                        /* Atur jarak bawah gambar */
+                    }
+
+                    .modal-body h5 {
+                        margin-top: 10px;
+                        /* Atur jarak atas judul harga */
+                    }
+
+                    .modal-body p {
+                        margin-top: 10px;
+                        /* Atur jarak atas paragraf deskripsi */
+                    }
+                </style>
+
+                <div class="modal fade" id="productModal6" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Kelas Learn About Cryptocurrency</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/bg-module-6.jpg" class="img-fluid" alt="Kelas Middle" />
+                                <h5>Harga: Rp. 380.000</h5>
+                                <p>Deskripsi:
+                                    <p>Kelas ini ditujukan bagi mereka yang sudah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperdalam pengetahuan mereka. Materi mencakup analisis pasar, strategi investasi, dan cara mengelola risiko. Ideal untuk peserta yang ingin meningkatkan keterampilan trading mereka.</p>
+                                <P>Keuntungan:</P>
+                                    <p>- Analisis Pasar: Mempelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</p>
+                                    <P>- Strategi Investasi: Mengembangkan strategi trading yang efektif untuk memaksimalkan keuntungan.</P>
+                                    <p>- Dukungan Komunitas: Bergabung dengan komunitas trader yang mendukung dan berbagi pengalaman.</p>
+                                    <p>- Peningkatan Keterampilan: Meningkatkan keterampilan trading dan manajemen risiko.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal7" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Kelas Web3 Crypto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/bg-module-7.jpg" class="img-fluid" alt="Kelas Profesional" />
+                                <h5>Harga: Rp. 390.000</h5>
+                                <p>Deskripsi:
+                                    <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Cocok untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <P>Keuntungan:</P>
+                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang teknik analisis dan trading lanjutan.</p>
+                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi secara efektif.</P>
+                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
+                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal8" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Kelas Blockchain Cryptocurrency</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/bg-module-8.jpg" class="img-fluid" alt="Kelas Premium" />
+                                <h5>Harga: Rp. 800.000</h5>
                                 <p>Deskripsi:
                                     <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
