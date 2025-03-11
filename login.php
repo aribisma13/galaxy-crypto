@@ -1,3 +1,41 @@
+<?php
+include 'koneksi.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Prepare and bind
+    $stmt = $conn->prepare("SELECT id, password FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+
+    // Execute the statement
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($id, $hashedPassword);
+        $stmt->fetch();
+
+        // Verify the password
+        if (password_verify($password, $hashedPassword)) {
+            session_start();
+            $_SESSION['user_id'] = $id;
+            header("Location: dashboard.php"); // Redirect to dashboard or another page
+            exit();
+        } else {
+            $error = "Invalid password.";
+        }
+    } else {
+        $error = "No account found with that email.";
+    }
+
+    // Close the statement and connection
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,12 +181,12 @@
                                         <div class="text-center">
                                             <h1 class="h4 text-gray-900 mb-4">Selamat Datang di Galaxy Crypto!</h1>
                                         </div>
-                                        <form class="user">
+                                        <form class="user" method="POST" action="login.php">
                                             <div class="form-group">
-                                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                                <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." required>
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                                <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required>
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox small">
@@ -156,16 +194,17 @@
                                                     <label class="custom-control-label" for="customCheck">Ingat Saya</label>
                                                 </div>
                                             </div>
-                                            <a href="dashboard.php" class="btn btn-primary btn-user btn-block">
+                                            <button type="submit" class="btn btn-primary btn-user btn-block">
                                                 Login
-                                            </a>
+                                            </button>
                                             <hr>
                                             <div class="text-center">
                                                 <a class="small" href="register.php">Create an Account!</a>
                                             </div>
                                             <div class="text-center">
                                                 <a class="small" href="landing.php">Kembali Ke Landing Page!</a>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +226,7 @@
 
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
-
+    </div>
 </body>
 
 </html>
