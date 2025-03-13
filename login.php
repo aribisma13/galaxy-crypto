@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Prepare and bind
-    $stmt = $conn->prepare("SELECT id, password FROM users WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id, password, role FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
 
     // Execute the statement
@@ -14,13 +14,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->store_result();
 
     if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $hashedPassword);
+        $stmt->bind_result($id, $hashedPassword, $role);
         $stmt->fetch();
 
         // Verify the password
         if (password_verify($password, $hashedPassword)) {
             session_start();
             $_SESSION['user_id'] = $id;
+            $_SESSION['role'] = $role; // Store the user's role in the session
             header("Location: dashboard.php"); // Redirect to dashboard or another page
             exit();
         } else {
@@ -87,6 +88,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             width: 300px;
         }
     </style>
+    <!-- Your existing body content -->
+    <?php if (isset($error)): ?>
+        <div class="alert alert-danger" role="alert">
+            <?php echo htmlspecialchars($error); ?>
+        </div>
+    <?php endif; ?>
     <div class="container">
 
         <!-- Outer Row -->

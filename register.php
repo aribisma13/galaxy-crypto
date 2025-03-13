@@ -1,3 +1,42 @@
+<?php
+include 'koneksi.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $role = $_POST['role']; // Mengambil peran dari form
+
+    // Validasi input
+    if (empty($email) || empty($password) || empty($role)) {
+        $error = "Semua field harus diisi.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "Email tidak valid.";
+    } else {
+        // Hash password
+        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+        // Prepare and bind
+        $stmt = $conn->prepare("INSERT INTO users (email, password, role) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $email, $hashedPassword, $role);
+
+        // Execute the statement
+        if ($stmt->execute()) {
+            // Redirect to login page after successful registration
+            header("Location: login.php");
+            exit();
+        } else {
+            $error = "Terjadi kesalahan saat mendaftar: " . $stmt->error;
+        }
+
+        // Close the statement
+        $stmt->close();
+    }
+
+    // Close the connection
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -137,36 +176,46 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Selamat Datang di Galaxy Crypto! Buat Akun Baru</h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="POST" action="register.php">
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                placeholder="First Name">
+                                            <input type="text" class="form-control form-control-user" id="exampleFirstName" name="firstName" placeholder="First Name" required>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                placeholder="Last Name">
+                                            <input type="text" class="form-control form-control-user" id="exampleLastName" name="lastName" placeholder="Last Name" required>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                            placeholder="Email Address">
+                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" name="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="role" id="role" class="form-control form-control-user" required>
+                                            <option value="admin">Admin</option>
+                                            <option value="student">Student</option>
+                                            <option value="mentor">Mentor</option>
+                                        </select>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="password" placeholder="Password" required>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleRepeatPassword" placeholder="Repeat Password">
+                                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" name="confirmPassword" placeholder="Repeat Password" required>
                                         </div>
                                     </div>
-                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                        Register Account
-                                    </a>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
                                     <hr>
                                 </form>
+                                <?php if (isset($error)): ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <?php echo htmlspecialchars($error); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (isset($success)): ?>
+                                    <div class="alert alert-success" role="alert">
+                                        <?php echo htmlspecialchars($success); ?>
+                                    </div>
+                                <?php endif; ?>
                                 <div class="text-center">
                                     <a class="small" href="login.php">Already have an account? Login!</a>
                                 </div>
