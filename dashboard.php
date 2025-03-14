@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$role = $_SESSION['role'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +74,7 @@
             <!-- Heading -->
 
             <!-- Nav Item - Pages Collapse Menu -->
+            <?php if ($role == 'admin'): ?>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <i class="fa fa-users"></i>
@@ -99,6 +111,22 @@
                     </div>
                 </div>
             </li>
+
+            <?php elseif ($role == 'student'): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="student.php">
+                        <i class="fa fa-users"></i>
+                        <span>Student</span>
+                    </a>
+                </li>
+            <?php elseif ($role == 'mentor'): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="mentor.php">
+                        <i class="fa fa-user-secret"></i>
+                        <span>Mentor</span>
+                    </a>
+                </li>
+            <?php endif; ?>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -177,8 +205,8 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                            <a class="nav-link dropdown-toggle" href="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo htmlspecialchars($role); ?></span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
