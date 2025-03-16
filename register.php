@@ -50,6 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <title>Galaxy Crypto - Register</title>
 
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/galaxy-crypto.ico" />
+
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
