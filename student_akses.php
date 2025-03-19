@@ -80,8 +80,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="module_terbaru.php">Module Terbaru</a>
-                        <a class="collapse-item" href="module_terlaris.php">Module Terlaris</a>
+                        <a class="collapse-item" href="module_student_akses.php">Module Terbaru</a>
                     </div>
                 </div>
             </li>
