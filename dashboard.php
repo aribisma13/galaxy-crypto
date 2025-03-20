@@ -114,14 +114,14 @@ $role = $_SESSION['role'];
 
             <?php elseif ($role == 'student'): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="student.php">
+                    <a class="nav-link" href="student_akses.php">
                         <i class="fa fa-users"></i>
                         <span>Student</span>
                     </a>
                 </li>
             <?php elseif ($role == 'mentor'): ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="mentor.php">
+                    <a class="nav-link" href="mentor_akses.php">
                         <i class="fa fa-user-secret"></i>
                         <span>Mentor</span>
                     </a>
@@ -129,13 +129,6 @@ $role = $_SESSION['role'];
             <?php endif; ?>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Logout</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
