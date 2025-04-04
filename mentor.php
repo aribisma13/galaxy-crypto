@@ -93,19 +93,12 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="module_terbaru.php">Module Terbaru</a>
-                        <a class="collapse-item" href="module_terlaris.php">Module Terlaris</a>
+                        <a class="collapse-item" href="module_terlaris.php">Video Pelatihan</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Logout</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
