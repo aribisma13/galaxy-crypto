@@ -257,8 +257,8 @@
                                 </video>
                                 <div class="card-body p-4">
                                     <div class="text-center">
-                                        <h5 class="fw-bolder">Kelas PHP Premium</h5>
-                                        Rp. 500.000
+                                        <h5 class="fw-bolder">Video 4: 5 Token Crypto Bullish Tahun 2025</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari lima token cryptocurrency yang diprediksi akan bullish pada tahun 2025 dan bagaimana Anda dapat memanfaatkan peluang investasi ini dengan strategi yang efektif.</span>
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
