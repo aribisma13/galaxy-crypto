@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Mentor | Galaxy Crypto</title>
+    <title>Materi Pelatihan | Galaxy Crypto</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/galaxy-crypto.ico" />
@@ -94,19 +94,12 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="module_terbaru.php">Module Terbaru</a>
-                        <a class="collapse-item" href="module_terlaris.php">Module Terlaris</a>
+                        <a class="collapse-item" href="module_terlaris.php">Video Pelatihan</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Logout</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -191,103 +184,259 @@
                     </ul>
                 </nav>
                 <!-- Page Content -->
-                <div class="container-fluid">
-                    <!-- Modal Tambah Mentor -->
-                    <div class="modal fade" id="tambahMentorModal" tabindex="-1" role="dialog" aria-labelledby="tambahMentorModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <form action="add_mentor.php" method="POST" enctype="multipart/form-data">
-                                    <div class="modal-header bg-primary text-white">
-                                        <h5 class="modal-title" id="tambahMentorModalLabel">Tambah Data Mentor</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="form-group">
-                                            <label for="nama_lengkap">Nama Lengkap</label>
-                                            <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Masukkan Nama Lengkap" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="tempat_tanggal_lahir">Tanggal Lahir</label>
-                                            <input type="date" class="form-control" id="tempat_tanggal_lahir" name="tempat_tanggal_lahir" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="alamat_tempat_tinggal">Alamat Tempat Tinggal</label>
-                                            <textarea class="form-control" id="alamat_tempat_tinggal" name="alamat_tempat_tinggal" placeholder="Masukkan Alamat" rows="3" required></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="nomor_telepon">Nomor Telepon / WhatsApp</label>
-                                            <input type="text" class="form-control" id="nomor_telepon" name="nomor_telepon" placeholder="Masukkan No WhatsApp" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="alamat_email">Alamat Email</label>
-                                            <input type="email" class="form-control" id="alamat_email" name="alamat_email" placeholder="Masukkan Email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="foto">Foto</label>
-                                            <input type="file" class="form-control-file" id="foto" name="foto" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="riwayat_pendidikan">Riwayat Pendidikan</label>
-                                            <textarea class="form-control" id="riwayat_pendidikan" name="riwayat_pendidikan" placeholder="Riwayat Pendidikan" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="gelar_akademik">Gelar Akademik</label>
-                                            <input type="text" class="form-control" id="gelar_akademik" name="gelar_akademik" placeholder="Masukkan Gelar Akademik" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="pengalaman_mengajar">Pengalaman Mengajar</label>
-                                            <textarea class="form-control" id="pengalaman_mengajar" name="pengalaman_mengajar" placeholder="Pengalaman Mengajar" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="bidang_keahlian">Bidang Keahlian</label>
-                                            <input type="text" class="form-control" id="bidang_keahlian" name="bidang_keahlian" placeholder="Bidang Keahlian" required>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-success">Tambah</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Page Heading -->
-                    <div style="text-align: center;">
-                        <h1 class="h3 mb-2 text-gray-800">Module Terlaris</h1>
-                    </div>
+                <!-- Page Heading -->
+                <div style="text-align: center;">
+                    <h1 class="h3 mb-2 text-gray-800">Video Pelatihan</h1>
+                </div>
 
-                    <!-- DataTales Example -->
-
-                    <!-- Logout Modal-->
-                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
+                <div class="container px-5 px-lg-3 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-1.jpg">
+                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <!-- Product details -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name -->
+                                        <h5 class="fw-bolder">Video 1: Pengantar Cryptocurrency</h5>
+                                        <!-- Product price -->
+                                        <p class="text-muted">Pelajari dasar-dasar cryptocurrency dan bagaimana cara kerjanya.</p>
+                                    </div>
                                 </div>
-                                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                                    <a class="btn btn-primary" href="login.php">Keluar</a>
+                                <!-- Product actions -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal1">Play Video</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-2.jpg">
+                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 2: Analisis Pasar</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal2">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-3.jpg">
+                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 3: Cara Timing The Market Crypto</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari cara menentukan waktu yang tepat untuk berinvestasi di pasar cryptocurrency dan meningkatkan potensi keuntungan Anda dengan strategi yang efektif.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal3">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-4.jpg">
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 4: 5 Coin Crypto Bullish Tahun 2025</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari lima token cryptocurrency yang diprediksi akan bullish pada tahun 2025 dan bagaimana Anda dapat memanfaatkan peluang investasi ini dengan strategi yang efektif.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Bootstrap core JavaScript-->
-                    <script src="vendor/jquery/jquery.min.js"></script>
-                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                </div>
 
-                    <!-- Core plugin JavaScript-->
-                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Modal Structure -->
+                <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Pengantar Cryptocurrency</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid mb-3" controls>
+                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, teknologi blockchain, dan cara bertransaksi menggunakan mata uang digital.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
+                                <p>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi cryptocurrency.</p>
+                                <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Custom scripts for all pages-->
-                    <script src="js/sb-admin-2.min.js"></script>
+                <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Analisis Pasar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang khusus untuk individu yang telah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperluas wawasan serta keterampilan mereka dalam analisis pasar. Dalam kelas ini, peserta akan mempelajari berbagai aspek analisis pasar cryptocurrency yang lebih mendalam, termasuk:</p>
+                                <P>Keuntungan:</P>
+                                <p>- Analisis Teknikal: Memahami grafik harga, pola candlestick, dan indikator teknis yang digunakan untuk memprediksi pergerakan harga di masa depan. Peserta akan belajar cara membaca dan menganalisis data historis untuk mengidentifikasi tren dan titik masuk/keluar yang optimal.</p>
+                                <p>- Analisis Fundamental: Menggali faktor-faktor yang mempengaruhi nilai cryptocurrency, seperti berita pasar, perkembangan teknologi, dan regulasi. Peserta akan diajarkan cara mengevaluasi proyek cryptocurrency berdasarkan whitepaper, tim pengembang, dan adopsi pasar.</p>
+                                <p>- Penggunaan Alat Analisis: Memperkenalkan berbagai alat dan platform analisis yang dapat membantu dalam pengambilan keputusan investasi, seperti TradingView, CoinMarketCap, dan alat analisis on-chain. Peserta akan belajar cara memanfaatkan alat ini untuk mendapatkan wawasan yang lebih baik tentang pasar.</p>
+                                <p>- Strategi Perdagangan: Mengembangkan strategi perdagangan yang efektif berdasarkan analisis pasar, termasuk day trading, swing trading, dan investasi jangka panjang. Peserta akan diajarkan cara mengelola risiko dan memaksimalkan potensi keuntungan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Cara Timing The Market Crypto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk trader dan investor crypto yang ingin menguasai seni timing the market dengan tepat. Peserta akan mempelajari strategi-strategi canggih untuk mengidentifikasi momen terbaik masuk (entry) dan keluar (exit) pasar, memaksimalkan profit, dan meminimalkan risiko. Materi mencakup pendekatan teknis, fundamental, dan psikologis untuk membaca peluang di volatilitas pasar crypto.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Memahami Siklus Pasar Crypto: Mempelajari pola siklus bull run, bear market, dan fase akumulasi. Peserta akan diajarkan cara mengenali tanda-tanda peralihan tren dan memanfaatkannya untuk timing yang optimal.</p>
+                                <p>- Analisis Teknikal Lanjutan untuk Timing: Menggunakan indikator teknikal seperti RSI, MACD, Fibonacci retracement, dan volume trading untuk menentukan titik reversal atau breakout. Peserta akan berlatih membaca grafik waktu (timeframes) multi-level (1 jam, 4 jam, daily) guna mengkonfirmasi sinyal.</p>
+                                <p>- Analisis On-Chain & Sentimen Pasar: Memanfaatkan data on-chain (seperti aliran whale, aktivitas exchange, dan staking) serta alat analisis sentimen (misalnya Fear & Greed Index) untuk mengukur momentum pasar.</p>
+                                <p>- Strategi Entry & Exit yang Terukur: Belajar menyusun rencana trading berbasis risk-reward ratio, termasuk teknik scaling in/out, stop-loss dinamis, dan take-profit bertahap. Studi kasus mencakup cara menangkap pump sebelum airdrop atau news release.</p>
+                                <p>- Psikologi & Manajemen Emosi: Mengendalikan FOMO (Fear of Missing Out) dan greed saat volatilitas tinggi, serta disiplin dalam menjalankan strategi timing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">5 Coin Crypto Bullish Tahun 2025</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk investor dan trader crypto yang ingin mengidentifikasi aset-aset potensial yang siap mengalami rally bullish pada tahun 2025. Peserta akan mempelajari metodologi seleksi koin berdasarkan analisis fundamental, teknologi, siklus pasar, dan faktor makroekonomi. Dibimbing oleh praktisi berpengalaman, kelas ini akan membuka wawasan tentang bagaimana memprediksi koin-koin yang memiliki prospek pertumbuhan tinggi di tengah dinamika pasar yang kompetitif.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Analisis Fundamental Mendalam: Mengevaluasi proyek crypto berdasarkan use case, teknologi inti, tim pengembang, dan roadmap.</p>
+                                <p>- Analisis Teknikal & Siklus Pasar: Membaca pola grafik historis (seperti halving effect, accumulation phases) untuk memprediksi momentum bullish.</p>
+                                <p>- Pemetaan Ekosistem & Tren Industri: Mengidentifikasi sektor crypto yang paling prospektif di 2025 (DeFi, AI, RWA, Layer-2, dll.)</p>
+                                <p>- Penggunaan Tools Analisis Khusus: Platform seperti Santiment, Glassnode, dan CoinGecko untuk melacak on-chain data dan social sentiment.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tambahkan CSS di bagian head atau dalam file CSS Anda -->
+                <style>
+                    .modal-body video {
+                        margin-bottom: 15px;
+                        /* Atur jarak bawah video */
+                    }
+
+                    .modal-body h5 {
+                        margin-top: 10px;
+                        /* Atur jarak atas judul harga */
+                    }
+
+                    .modal-body p {
+                        margin-top: 10px;
+                        /* Atur jarak atas paragraf deskripsi */
+                    }
+                </style>
+
+                <!-- DataTales Example -->
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                                <a class="btn btn-primary" href="login.php">Keluar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
