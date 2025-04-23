@@ -209,7 +209,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                 <a class="small" href="register.php">Create an Account!</a>
                                             </div>
                                             <div class="text-center">
-                                                <a class="small" href="landing.php">Kembali Ke Landing Page!</a>
+                                                <a class="small" href="index.php">Kembali Ke Landing Page!</a>
                                             </div>
                                         </form>
                                     </div>
