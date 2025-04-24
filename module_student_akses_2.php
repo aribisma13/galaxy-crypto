@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Mentor | Galaxy Crypto</title>
+    <title>Video Pelatihan | Galaxy Crypto</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/galaxy-crypto.ico" />
@@ -251,19 +251,19 @@
                         <div class="col mb-5">
                             <div class="card h-100">
                                 <!-- Product video -->
-                                <video class="card-img-top" controls poster="assets/img/thumbnail-module-php-premium.jpg">
-                                    <source src="assets/videos/module-php-premium.mp4" type="video/mp4">
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-4.jpg">
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="card-body p-4">
                                     <div class="text-center">
-                                        <h5 class="fw-bolder">Video 4: 5 Token Crypto Bullish Tahun 2025</h5>
+                                        <h5 class="fw-bolder">Video 4: 5 Coin Crypto Bullish Tahun 2025</h5>
                                         <span class="text-muted text-decoration-line-through">Pelajari lima token cryptocurrency yang diprediksi akan bullish pada tahun 2025 dan bagaimana Anda dapat memanfaatkan peluang investasi ini dengan strategi yang efektif.</span>
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">View</button>
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">Play Video</button>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +276,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Video 1: Pengantar Cryptocurrency</h5>
+                                <h5 class="modal-title" id="productModalLabel">Pengantar Cryptocurrency</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -301,7 +301,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Video 2: Analisis Pasar</h5>
+                                <h5 class="modal-title" id="productModalLabel">Analisis Pasar</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -327,24 +327,24 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Kelas PHP Profesional</h5>
+                                <h5 class="modal-title" id="productModalLabel">Cara Timing The Market Crypto</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <video class="img-fluid" controls>
-                                    <source src="assets/videos/module-php-professional.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                <h5>Harga: Rp. 400.000</h5>
-                                <p>Deskripsi:
-                                <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang pengembangan aplikasi web menggunakan PHP dan MySQL. Peserta akan belajar tentang teknik pengembangan lanjutan, keamanan aplikasi, dan optimasi database.</p>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk trader dan investor crypto yang ingin menguasai seni timing the market dengan tepat. Peserta akan mempelajari strategi-strategi canggih untuk mengidentifikasi momen terbaik masuk (entry) dan keluar (exit) pasar, memaksimalkan profit, dan meminimalkan risiko. Materi mencakup pendekatan teknis, fundamental, dan psikologis untuk membaca peluang di volatilitas pasar crypto.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang pengembangan aplikasi web.</p>
-                                <p>- Keamanan Aplikasi: Belajar cara mengamankan aplikasi web dari serangan.</p>
-                                <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
-                                </p>
+                                <p>- Memahami Siklus Pasar Crypto: Mempelajari pola siklus bull run, bear market, dan fase akumulasi. Peserta akan diajarkan cara mengenali tanda-tanda peralihan tren dan memanfaatkannya untuk timing yang optimal.</p>
+                                <p>- Analisis Teknikal Lanjutan untuk Timing: Menggunakan indikator teknikal seperti RSI, MACD, Fibonacci retracement, dan volume trading untuk menentukan titik reversal atau breakout. Peserta akan berlatih membaca grafik waktu (timeframes) multi-level (1 jam, 4 jam, daily) guna mengkonfirmasi sinyal.</p>
+                                <p>- Analisis On-Chain & Sentimen Pasar: Memanfaatkan data on-chain (seperti aliran whale, aktivitas exchange, dan staking) serta alat analisis sentimen (misalnya Fear & Greed Index) untuk mengukur momentum pasar.</p>
+                                <p>- Strategi Entry & Exit yang Terukur: Belajar menyusun rencana trading berbasis risk-reward ratio, termasuk teknik scaling in/out, stop-loss dinamis, dan take-profit bertahap. Studi kasus mencakup cara menangkap pump sebelum airdrop atau news release.</p>
+                                <p>- Psikologi & Manajemen Emosi: Mengendalikan FOMO (Fear of Missing Out) dan greed saat volatilitas tinggi, serta disiplin dalam menjalankan strategi timing.</p>
                             </div>
                         </div>
                     </div>
@@ -354,23 +354,224 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="productModalLabel">Kelas PHP Premium</h5>
+                                <h5 class="modal-title" id="productModalLabel">5 Coin Crypto Bullish Tahun 2025</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <video class="img-fluid" controls>
-                                    <source src="assets/videos/module-php-premium.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                <h5>Harga: Rp. 500.000</h5>
-                                <p>Deskripsi:
-                                <p>Kelas premium ini menawarkan pengetahuan mendalam tentang pengembangan aplikasi web dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis, manajemen proyek, dan strategi pengembangan yang lebih kompleks.</p>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk investor dan trader crypto yang ingin mengidentifikasi aset-aset potensial yang siap mengalami rally bullish pada tahun 2025. Peserta akan mempelajari metodologi seleksi koin berdasarkan analisis fundamental, teknologi, siklus pasar, dan faktor makroekonomi. Dibimbing oleh praktisi berpengalaman, kelas ini akan membuka wawasan tentang bagaimana memprediksi koin-koin yang memiliki prospek pertumbuhan tinggi di tengah dinamika pasar yang kompetitif.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang pengembangan aplikasi web.</p>
-                                <p>- Manajemen Proyek: Belajar cara mengelola proyek pengembangan dengan efektif.</p>
-                                <p>- Akses ke Alat: Memanfaatkan alat dan sumber daya pengembangan profesional.</p>
+                                <p>- Analisis Fundamental Mendalam: Mengevaluasi proyek crypto berdasarkan use case, teknologi inti, tim pengembang, dan roadmap.</p>
+                                <p>- Analisis Teknikal & Siklus Pasar: Membaca pola grafik historis (seperti halving effect, accumulation phases) untuk memprediksi momentum bullish.</p>
+                                <p>- Pemetaan Ekosistem & Tren Industri: Mengidentifikasi sektor crypto yang paling prospektif di 2025 (DeFi, AI, RWA, Layer-2, dll.)</p>
+                                <p>- Penggunaan Tools Analisis Khusus: Platform seperti Santiment, Glassnode, dan CoinGecko untuk melacak on-chain data dan social sentiment.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Heading 2 -->
+                <div class="container px-5 px-lg-3 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-5.jpg">
+                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <!-- Product details -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name -->
+                                        <h5 class="fw-bolder">Video 5: Menganalisis Coin Ethereum </h5>
+                                        <!-- Product price -->
+                                        <p class="text-muted">Pelajari lebih dalam tentang Ethereum, cara kerjanya, serta faktor-faktor yang memengaruhi nilai dan potensinya di dunia cryptocurrency.</p>
+                                    </div>
+                                </div>
+                                <!-- Product actions -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal5">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-6.jpg">
+                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 6: Bitcoin Analisis Market Bullish</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari cara mengidentifikasi tren pasar bullish pada Bitcoin melalui indikator teknikal, pola grafik, dan sentimen pasar. Dapatkan pemahaman yang lebih baik tentang bagaimana momentum pasar terbentuk, serta strategi untuk memaksimalkan peluang investasi saat harga bergerak naik.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal6">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-7.jpg">
+                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 7: Mengetahui Perbedaan Meme Coin dan Altcoin di Crypto</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari perbedaan mendasar antara meme coin dan altcoin, serta bagaimana karakteristik unik masing-masing dapat memengaruhi keputusan investasi Anda. Temukan strategi untuk mengenali peluang terbaik di pasar cryptocurrency dan meningkatkan potensi keuntungan dengan pendekatan yang tepat.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal7">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product video -->
+                                <video class="card-img-top" controls poster="assets/img/video-thumbnail-8.jpg">
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <h5 class="fw-bolder">Video 8: 5 Tips Trading Pada Saat Bear Market di Crypto</h5>
+                                        <span class="text-muted text-decoration-line-through">Pelajari 5 tips praktis untuk melakukan trading secara cerdas di tengah kondisi pasar yang menurun (bear market). Temukan strategi bertahan dan peluang tersembunyi yang dapat membantu Anda meminimalkan risiko dan tetap meraih keuntungan di situasi pasar yang penuh tantangan.</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal8">Play Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Structure -->
+                <div class="modal fade" id="productModal5" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Menganalisis Coin Ethereum</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid mb-3" controls>
+                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, teknologi blockchain, dan cara bertransaksi menggunakan mata uang digital.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
+                                <p>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi cryptocurrency.</p>
+                                <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal6" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Bitcoin Analisis Market Bullish</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang khusus untuk individu yang telah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperluas wawasan serta keterampilan mereka dalam analisis pasar. Dalam kelas ini, peserta akan mempelajari berbagai aspek analisis pasar cryptocurrency yang lebih mendalam, termasuk:</p>
+                                <P>Keuntungan:</P>
+                                <p>- Analisis Teknikal: Memahami grafik harga, pola candlestick, dan indikator teknis yang digunakan untuk memprediksi pergerakan harga di masa depan. Peserta akan belajar cara membaca dan menganalisis data historis untuk mengidentifikasi tren dan titik masuk/keluar yang optimal.</p>
+                                <p>- Analisis Fundamental: Menggali faktor-faktor yang mempengaruhi nilai cryptocurrency, seperti berita pasar, perkembangan teknologi, dan regulasi. Peserta akan diajarkan cara mengevaluasi proyek cryptocurrency berdasarkan whitepaper, tim pengembang, dan adopsi pasar.</p>
+                                <p>- Penggunaan Alat Analisis: Memperkenalkan berbagai alat dan platform analisis yang dapat membantu dalam pengambilan keputusan investasi, seperti TradingView, CoinMarketCap, dan alat analisis on-chain. Peserta akan belajar cara memanfaatkan alat ini untuk mendapatkan wawasan yang lebih baik tentang pasar.</p>
+                                <p>- Strategi Perdagangan: Mengembangkan strategi perdagangan yang efektif berdasarkan analisis pasar, termasuk day trading, swing trading, dan investasi jangka panjang. Peserta akan diajarkan cara mengelola risiko dan memaksimalkan potensi keuntungan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal7" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">Mengetahui Perbedaan Meme Coin dan Altcoin di Crypto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk trader dan investor crypto yang ingin menguasai seni timing the market dengan tepat. Peserta akan mempelajari strategi-strategi canggih untuk mengidentifikasi momen terbaik masuk (entry) dan keluar (exit) pasar, memaksimalkan profit, dan meminimalkan risiko. Materi mencakup pendekatan teknis, fundamental, dan psikologis untuk membaca peluang di volatilitas pasar crypto.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Memahami Siklus Pasar Crypto: Mempelajari pola siklus bull run, bear market, dan fase akumulasi. Peserta akan diajarkan cara mengenali tanda-tanda peralihan tren dan memanfaatkannya untuk timing yang optimal.</p>
+                                <p>- Analisis Teknikal Lanjutan untuk Timing: Menggunakan indikator teknikal seperti RSI, MACD, Fibonacci retracement, dan volume trading untuk menentukan titik reversal atau breakout. Peserta akan berlatih membaca grafik waktu (timeframes) multi-level (1 jam, 4 jam, daily) guna mengkonfirmasi sinyal.</p>
+                                <p>- Analisis On-Chain & Sentimen Pasar: Memanfaatkan data on-chain (seperti aliran whale, aktivitas exchange, dan staking) serta alat analisis sentimen (misalnya Fear & Greed Index) untuk mengukur momentum pasar.</p>
+                                <p>- Strategi Entry & Exit yang Terukur: Belajar menyusun rencana trading berbasis risk-reward ratio, termasuk teknik scaling in/out, stop-loss dinamis, dan take-profit bertahap. Studi kasus mencakup cara menangkap pump sebelum airdrop atau news release.</p>
+                                <p>- Psikologi & Manajemen Emosi: Mengendalikan FOMO (Fear of Missing Out) dan greed saat volatilitas tinggi, serta disiplin dalam menjalankan strategi timing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productModal8" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productModalLabel">5 Tips Trading Pada Saat Bear Market di Crypto</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <video class="img-fluid" controls>
+                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <h5>Deskripsi:</h5>
+                                <p>Kelas ini dirancang untuk investor dan trader crypto yang ingin mengidentifikasi aset-aset potensial yang siap mengalami rally bullish pada tahun 2025. Peserta akan mempelajari metodologi seleksi koin berdasarkan analisis fundamental, teknologi, siklus pasar, dan faktor makroekonomi. Dibimbing oleh praktisi berpengalaman, kelas ini akan membuka wawasan tentang bagaimana memprediksi koin-koin yang memiliki prospek pertumbuhan tinggi di tengah dinamika pasar yang kompetitif.</p>
+                                <P>Keuntungan:</P>
+                                <p>- Analisis Fundamental Mendalam: Mengevaluasi proyek crypto berdasarkan use case, teknologi inti, tim pengembang, dan roadmap.</p>
+                                <p>- Analisis Teknikal & Siklus Pasar: Membaca pola grafik historis (seperti halving effect, accumulation phases) untuk memprediksi momentum bullish.</p>
+                                <p>- Pemetaan Ekosistem & Tren Industri: Mengidentifikasi sektor crypto yang paling prospektif di 2025 (DeFi, AI, RWA, Layer-2, dll.)</p>
+                                <p>- Penggunaan Tools Analisis Khusus: Platform seperti Santiment, Glassnode, dan CoinGecko untuk melacak on-chain data dan social sentiment.</p>
                                 </p>
                             </div>
                         </div>
