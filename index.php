@@ -209,7 +209,7 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-success mt-auto" href="login.php">Buy Now</a></div>
+                                    <a class="btn btn-success mt-auto" href="payment.php?kelas=beginner">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +239,7 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-success mt-auto" href="login.php">Buy Now</a></div>
+                                    <a class="btn btn-success mt-auto" href="payment.php?kelas=middle">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-success mt-auto" href="login.php">Buy Now</a></div>
+                                    <a class="btn btn-success mt-auto" href="payment.php?kelas=profesional">Buy Now</a>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +288,7 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-success mt-auto" href="login.php">Buy Now</a></div>
+                                    <a class="btn btn-success mt-auto" href="payment.php?kelas=premium">Buy Now</a>
                                 </div>
                             </div>
                         </div>
