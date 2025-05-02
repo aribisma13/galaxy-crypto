@@ -206,10 +206,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             </button>
                                             <hr>
                                             <div class="text-center">
-                                                <a class="small" href="register.php">Create an Account!</a>
+                                                <a class="small" href="register.php">Buat Akun!</a>
                                             </div>
                                             <div class="text-center">
-                                                <a class="small" href="index.php">Kembali Ke Landing Page!</a>
+                                                <a class="small" href="index.php">Kembali Ke Home!</a>
                                             </div>
                                         </form>
                                     </div>
