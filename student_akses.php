@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Mentor | Galaxy Crypto</title>
+    <title>Jadwal | Galaxy Crypto</title>
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/galaxy-crypto.ico" />
@@ -227,7 +227,9 @@
                     </div>
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Table Jadwal</h1>
+                    <div style="text-align: center;">
+                        <h1 class="h3 mb-2 text-gray-800">Table Jadwal</h1>
+                    </div>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
