@@ -220,7 +220,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </div>
                                 <?php endif; ?>
                                 <div class="text-center">
-                                    <a class="small" href="login.php">Already have an account? Login!</a>
+                                    <a class="small" href="login.php">Sudah punya akun? Masuk!</a>
                                 </div>
                             </div>
                         </div>
