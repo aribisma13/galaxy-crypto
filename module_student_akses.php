@@ -194,8 +194,9 @@
                                 </div>
                                 <!-- Product actions -->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
+                                    <div class="text-center justify-content-center gap-2">
                                         <button class="btn btn-success" data-toggle="modal" data-target="#productModal1">View</button>
+                                        <a href="download_pdf.php?file=beginner.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -214,6 +215,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal2">View</button>
+                                        <a href="download_pdf.php?file=middle.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -233,6 +235,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal3">View</button>
+                                        <a href="download_pdf.php?file=profesional.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -250,6 +253,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">View</button>
+                                        <a href="download_pdf.php?file=premium.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+                 <div class="modal fade" id="productModal4" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -362,14 +366,14 @@
                             </div>
                             <div class="modal-body">
                                 <img src="assets/img/bg-module-4.jpg" class="img-fluid" alt="Kelas Premium" />
-                                <h5>Harga: Rp. 400.000</h5>
+                                <h5>Harga: Rp. 500.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
-                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
-                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
-                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
+                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
+                                <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
+                                <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
+                                <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
                                 </p>
                             </div>
                         </div>
@@ -400,6 +404,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success" data-toggle="modal" data-target="#productModal5">View</button>
+                                        <a href="download_pdf.php?file=trader.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -418,6 +423,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal6">View</button>
+                                        <a href="download_pdf.php?file=learncrypto.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -437,6 +443,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal7">View</button>
+                                        <a href="download_pdf.php?file=web3.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -454,6 +461,7 @@
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
                                         <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal8">View</button>
+                                        <a href="download_pdf.php?file=blockchain.pdf" class="btn btn-primary">Download</a>
                                     </div>
                                 </div>
                             </div>
