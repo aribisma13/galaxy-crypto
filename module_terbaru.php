@@ -207,8 +207,12 @@
                                 </div>
                                 <!-- Product actions -->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal1">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal1">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf1">
+                                            <label for="uploadPdf1" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -225,8 +229,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal2">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal2">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf2">
+                                            <label for="uploadPdf2" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -244,8 +252,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal3">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal3">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf3">
+                                            <label for="uploadPdf3" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -261,8 +273,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal4">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal4">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf4">
+                                            <label for="uploadPdf4" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -284,12 +300,12 @@
                                 <img src="assets/img/bg-module-1.jpg" class="img-fluid mb-3" alt="Kelas Beginner" />
                                 <h5>Harga: Rp. 150.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
+                                <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
-                                    <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
-                                    <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
-                                    <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                                <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
+                                <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
+                                <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
+                                <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
                                 </p>
                             </div>
                         </div>
@@ -327,12 +343,12 @@
                                 <img src="assets/img/bg-module-2.jpg" class="img-fluid" alt="Kelas Middle" />
                                 <h5>Harga: Rp. 200.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas ini ditujukan bagi mereka yang sudah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperdalam pengetahuan mereka. Materi mencakup analisis pasar, strategi investasi, dan cara mengelola risiko. Ideal untuk peserta yang ingin meningkatkan keterampilan trading mereka.</p>
+                                <p>Kelas ini ditujukan bagi mereka yang sudah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperdalam pengetahuan mereka. Materi mencakup analisis pasar, strategi investasi, dan cara mengelola risiko. Ideal untuk peserta yang ingin meningkatkan keterampilan trading mereka.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Analisis Pasar: Mempelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</p>
-                                    <P>- Strategi Investasi: Mengembangkan strategi trading yang efektif untuk memaksimalkan keuntungan.</P>
-                                    <p>- Dukungan Komunitas: Bergabung dengan komunitas trader yang mendukung dan berbagi pengalaman.</p>
-                                    <p>- Peningkatan Keterampilan: Meningkatkan keterampilan trading dan manajemen risiko.</p>
+                                <p>- Analisis Pasar: Mempelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</p>
+                                <P>- Strategi Investasi: Mengembangkan strategi trading yang efektif untuk memaksimalkan keuntungan.</P>
+                                <p>- Dukungan Komunitas: Bergabung dengan komunitas trader yang mendukung dan berbagi pengalaman.</p>
+                                <p>- Peningkatan Keterampilan: Meningkatkan keterampilan trading dan manajemen risiko.</p>
                                 </p>
                             </div>
                         </div>
@@ -352,12 +368,12 @@
                                 <img src="assets/img/bg-module-3.jpg" class="img-fluid" alt="Kelas Profesional" />
                                 <h5>Harga: Rp. 400.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Cocok untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Cocok untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang teknik analisis dan trading lanjutan.</p>
-                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi secara efektif.</P>
-                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
-                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional.</p>
+                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang teknik analisis dan trading lanjutan.</p>
+                                <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi secara efektif.</P>
+                                <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
+                                <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional.</p>
                                 </p>
                             </div>
                         </div>
@@ -375,14 +391,14 @@
                             </div>
                             <div class="modal-body">
                                 <img src="assets/img/bg-module-4.jpg" class="img-fluid" alt="Kelas Premium" />
-                                <h5>Harga: Rp. 400.000</h5>
+                                <h5>Harga: Rp. 500.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
-                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
-                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
-                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
+                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
+                                <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
+                                <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
+                                <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
                                 </p>
                             </div>
                         </div>
@@ -411,8 +427,12 @@
                                 </div>
                                 <!-- Product actions -->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success" data-toggle="modal" data-target="#productModal5">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal5">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf5">
+                                            <label for="uploadPdf5" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -429,8 +449,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal6">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal6">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf6">
+                                            <label for="uploadPdf6" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -448,8 +472,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal7">View</button>
+                                   <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal7">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf5">
+                                            <label for="uploadPdf5" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -465,8 +493,12 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <button class="btn btn-success mt-auto" data-toggle="modal" data-target="#productModal8">View</button>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-success mr-2" data-toggle="modal" data-target="#productModal8">View</button>
+                                        <form action="upload_pdf.php" method="post" enctype="multipart/form-data">
+                                            <input type="file" name="pdf_file" accept="application/pdf" style="display:none;" onchange="this.form.submit();" id="uploadPdf5">
+                                            <label for="uploadPdf5" class="btn btn-primary m-0">Upload PDF</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -488,12 +520,12 @@
                                 <img src="assets/img/bg-module-5.jpg" class="img-fluid mb-3" alt="Kelas Beginner" />
                                 <h5>Harga: Rp. 250.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
+                                <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, cara bertransaksi, dan pengenalan terhadap berbagai jenis mata uang digital. Cocok untuk siapa saja yang baru memulai perjalanan di dunia crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
-                                    <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
-                                    <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
-                                    <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                                <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
+                                <P>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi.</P>
+                                <p>- Jaringan: Kesempatan untuk berinteraksi dengan sesama pemula dan membangun jaringan.</p>
+                                <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
                                 </p>
                             </div>
                         </div>
@@ -531,12 +563,12 @@
                                 <img src="assets/img/bg-module-6.jpg" class="img-fluid" alt="Kelas Middle" />
                                 <h5>Harga: Rp. 380.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas ini ditujukan bagi mereka yang sudah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperdalam pengetahuan mereka. Materi mencakup analisis pasar, strategi investasi, dan cara mengelola risiko. Ideal untuk peserta yang ingin meningkatkan keterampilan trading mereka.</p>
+                                <p>Kelas ini ditujukan bagi mereka yang sudah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperdalam pengetahuan mereka. Materi mencakup analisis pasar, strategi investasi, dan cara mengelola risiko. Ideal untuk peserta yang ingin meningkatkan keterampilan trading mereka.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Analisis Pasar: Mempelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</p>
-                                    <P>- Strategi Investasi: Mengembangkan strategi trading yang efektif untuk memaksimalkan keuntungan.</P>
-                                    <p>- Dukungan Komunitas: Bergabung dengan komunitas trader yang mendukung dan berbagi pengalaman.</p>
-                                    <p>- Peningkatan Keterampilan: Meningkatkan keterampilan trading dan manajemen risiko.</p>
+                                <p>- Analisis Pasar: Mempelajari cara menganalisis tren pasar dan membuat keputusan investasi yang lebih baik.</p>
+                                <P>- Strategi Investasi: Mengembangkan strategi trading yang efektif untuk memaksimalkan keuntungan.</P>
+                                <p>- Dukungan Komunitas: Bergabung dengan komunitas trader yang mendukung dan berbagi pengalaman.</p>
+                                <p>- Peningkatan Keterampilan: Meningkatkan keterampilan trading dan manajemen risiko.</p>
                                 </p>
                             </div>
                         </div>
@@ -556,12 +588,12 @@
                                 <img src="assets/img/bg-module-7.jpg" class="img-fluid" alt="Kelas Profesional" />
                                 <h5>Harga: Rp. 390.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Cocok untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <p>Kelas profesional ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Cocok untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang teknik analisis dan trading lanjutan.</p>
-                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi secara efektif.</P>
-                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
-                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional.</p>
+                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman mendalam tentang teknik analisis dan trading lanjutan.</p>
+                                <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi secara efektif.</P>
+                                <p>- Sesi Praktis: Mengikuti sesi praktis yang membantu menerapkan teori ke dalam praktik.</p>
+                                <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional.</p>
                                 </p>
                             </div>
                         </div>
@@ -581,12 +613,12 @@
                                 <img src="assets/img/bg-module-8.jpg" class="img-fluid" alt="Kelas Premium" />
                                 <h5>Harga: Rp. 800.000</h5>
                                 <p>Deskripsi:
-                                    <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
+                                <p>Kelas premium ini menawarkan pengetahuan mendalam tentang trading cryptocurrency dan teknik analisis lanjutan. Peserta akan belajar tentang penggunaan alat analisis teknis, manajemen portofolio, dan strategi trading yang lebih kompleks. Kelas ini dirancang khusus untuk trader yang ingin mengambil langkah serius dalam investasi crypto.</p>
                                 <P>Keuntungan:</P>
-                                    <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
-                                    <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
-                                    <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
-                                    <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
+                                <p>- Pengetahuan Mendalam: Mendapatkan pemahaman yang komprehensif tentang teknik analisis dan trading lanjutan.</p>
+                                <P>- Manajemen Portofolio: Belajar cara mengelola portofolio investasi dengan efektif dan efisien.</P>
+                                <p>- Sesi Praktis: Mengikuti sesi praktis yang dirancang untuk membantu menerapkan teori ke dalam praktik nyata.</p>
+                                <p>- Akses ke Alat Trading: Memanfaatkan alat dan sumber daya trading profesional untuk meningkatkan kinerja investasi.</p>
                                 </p>
                             </div>
                         </div>
