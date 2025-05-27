@@ -233,8 +233,7 @@
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                        </div>
+                        <div class="card-header py-3"></div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -254,39 +253,52 @@
                                     </thead>
                                     <tbody>
                                         <?php
-
-                                        // Koneksi ke database
                                         $conn = new mysqli("localhost", "root", "", "crypto");
-
-                                        // Cek koneksi
                                         if ($conn->connect_error) {
                                             die("Koneksi gagal: " . $conn->connect_error);
                                         }
 
-                                        // Ambil data dari tabel jadwal
                                         $sql = "SELECT * FROM jadwal";
                                         $result = $conn->query($sql);
 
                                         if ($result->num_rows > 0) {
+                                            // Ganti dengan nomor WhatsApp admin (format internasional, tanpa +)
+                                            $nomor_admin = "6287853847141";
+
                                             while ($row = $result->fetch_assoc()) {
+                                                $id = $row['id_jadwal'];
+                                                $nama_student = $row['nama_student'];
+                                                $nama_mentor = $row['nama_mentor'];
+                                                $tanggal = $row['tanggal_mulai'];
+                                                $jam = $row['waktu_mulai'];
+                                                $jenis = $row['jenis_kursus'];
+                                                $tempat = $row['tempat'];
+
+                                                // Pesan otomatis lengkap
+                                                $pesan = "Halo Admin, saya ingin konfirmasi jadwal:\n\nID: $id\nStudent: $nama_student\nMentor: $nama_mentor\nJenis Kursus: $jenis\nTanggal: $tanggal\nJam: $jam\nTempat: $tempat";
+                                                $pesan_encoded = urlencode($pesan);
+
                                                 echo "<tr>";
-                                                echo "<td>" . $row['id_jadwal'] . "</td>";
-                                                echo "<td>" . $row['nama_student'] . "</td>";
-                                                echo "<td>" . $row['nama_mentor'] . "</td>";
-                                                echo "<td>" . $row['jenis_kursus'] . "</td>";
-                                                echo "<td>" . $row['tanggal_mulai'] . "</td>";
-                                                echo "<td>" . $row['waktu_mulai'] . "</td>";
+                                                echo "<td>" . $id . "</td>";
+                                                echo "<td>" . $nama_student . "</td>";
+                                                echo "<td>" . $nama_mentor . "</td>";
+                                                echo "<td>" . $jenis . "</td>";
+                                                echo "<td>" . $tanggal . "</td>";
+                                                echo "<td>" . $jam . "</td>";
                                                 echo "<td>" . $row['waktu_selesai'] . "</td>";
-                                                echo "<td>" . $row['tempat'] . "</td>";
+                                                echo "<td>" . $tempat . "</td>";
                                                 echo "<td>" . $row['keterangan'] . "</td>";
                                                 echo "<td>
-                                                    <a href='generate_pdf.php?id=" . $row['id_jadwal'] . "' class='btn btn-primary'>Download PDF</a>
-                                                    </td>";
+                                    <a href='https://wa.me/$nomor_admin?text=$pesan_encoded' target='_blank' class='btn btn-success'>
+                                        Info WhatsApp
+                                    </a>
+                                  </td>";
                                                 echo "</tr>";
                                             }
                                         } else {
                                             echo "<tr><td colspan='10'>Tidak ada data</td></tr>";
                                         }
+
                                         $conn->close();
                                         ?>
                                     </tbody>
@@ -294,37 +306,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
+                    <!-- Logout Modal-->
+                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
+                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                                    <a class="btn btn-primary" href="login.php">Keluar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                        <a class="btn btn-primary" href="login.php">Keluar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <!-- Bootstrap core JavaScript-->
+                    <script src="vendor/jquery/jquery.min.js"></script>
+                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                    <!-- Core plugin JavaScript-->
+                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="js/sb-admin-2.min.js"></script>
+                    <!-- Custom scripts for all pages-->
+                    <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
