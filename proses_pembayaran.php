@@ -9,12 +9,14 @@ $kelasList = [
     "premium" => ["nama" => "Kelas Premium", "harga" => 500000]
 ];
 
-// Tangkap dan validasi data
-$nama  = trim($_POST['nama'] ?? '');
-$email = trim($_POST['email'] ?? '');
+// Tangkap dan validasi data dari form
+$nama        = trim($_POST['nama'] ?? '');
+$email       = trim($_POST['email'] ?? '');
+$noWhatsapp  = trim($_POST['no_whatsapp'] ?? '');
 $kelasDipilih = $_POST['kelas'] ?? '';
 
-if ($nama === '' || $email === '' || $kelasDipilih === '') {
+// Validasi form
+if ($nama === '' || $email === '' || $noWhatsapp === '' || $kelasDipilih === '') {
     echo "<h2>Data tidak lengkap! Silakan kembali dan isi semua data.</h2>";
     exit;
 }
@@ -30,16 +32,16 @@ if (!isset($kelasList[$kelasDipilih])) {
 }
 
 $kelasInfo = $kelasList[$kelasDipilih];
-$harga = $kelasInfo['harga'];
-$tanggal = date('Y-m-d H:i:s');
+$harga     = $kelasInfo['harga'];
+$tanggal   = date('Y-m-d H:i:s');
 
-// Simpan data ke database
-$stmt = $conn->prepare("INSERT INTO pembayaran (nama, email, kelas, harga, created_at) VALUES (?, ?, ?, ?, ?)");
+// Simpan ke database
+$stmt = $conn->prepare("INSERT INTO pembayaran (nama, email, no_whatsapp, kelas, harga, created_at) VALUES (?, ?, ?, ?, ?, ?)");
 if (!$stmt) {
     echo "<h2>Kesalahan server: gagal mempersiapkan statement.</h2>";
     exit;
 }
-$stmt->bind_param("sssds", $nama, $email, $kelasDipilih, $harga, $tanggal);
+$stmt->bind_param("ssssis", $nama, $email, $noWhatsapp, $kelasDipilih, $harga, $tanggal);
 
 if (!$stmt->execute()) {
     echo "<h2>Gagal menyimpan ke database: " . htmlspecialchars($stmt->error) . "</h2>";
@@ -55,7 +57,6 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title>Konfirmasi Pesanan</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/galaxy-crypto.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -79,12 +80,13 @@ $conn->close();
                 <h3 class="card-title text-center mb-4 text-success">Pendaftaran Berhasil!</h3>
                 <p><strong>Nama:</strong> <?= htmlspecialchars($nama) ?></p>
                 <p><strong>Email:</strong> <?= htmlspecialchars($email) ?></p>
+                <p><strong>No WhatsApp:</strong> <?= htmlspecialchars($noWhatsapp) ?></p>
                 <p><strong>Kelas yang diambil:</strong> <?= htmlspecialchars($kelasInfo['nama']) ?></p>
                 <p><strong>Harga:</strong> Rp <?= number_format($harga, 0, ',', '.') ?></p>
                 <p><strong>Waktu Transaksi:</strong> <?= $tanggal ?></p>
 
                 <hr>
-                <p class="text-muted">📧 Info lebih lanjut dan akses kelas akan dikirim ke email Anda.</p>
+                <p class="text-muted">📧 Info lebih lanjut dan akses kelas akan dikirim ke email atau WhatsApp Anda.</p>
                 <a href="login.php" class="btn btn-primary">Login</a>
                 <a href="index.php" class="btn btn-secondary">Kembali ke Home</a>
             </div>
