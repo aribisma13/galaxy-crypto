@@ -61,7 +61,10 @@ $kelas = $kelasList[$kelasDipilih];
                         <label for="email" class="form-label">Email Aktif</label>
                         <input type="email" name="email" id="email" class="form-control" required>
                     </div>
-
+                    <div class="mb-3">
+                        <label for="no_whatsapp" class="form-label">No WhatsApp</label>
+                        <input type="text" name="no_whatsapp" id="no_whatsapp" class="form-control" required>
+                    </div>
                     <button type="submit" class="btn btn-success w-100">Lanjut ke Pembayaran</button>
                 </form>
             </div>
