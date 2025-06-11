@@ -397,7 +397,7 @@
                             <div class="card h-100">
                                 <!-- Product video -->
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-5.jpg">
-                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-5.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <!-- Product details -->
@@ -423,7 +423,7 @@
                                 <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
                                 <!-- Product video -->
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-6.jpg">
-                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-6.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="card-body p-4">
@@ -445,7 +445,7 @@
                                 <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
                                 <!-- Product video -->
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-7.jpg">
-                                    <source src="assets/videos/module-video-3.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="card-body p-4">
@@ -466,7 +466,7 @@
                             <div class="card h-100">
                                 <!-- Product video -->
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-8.jpg">
-                                    <source src="assets/videos/module-video-4.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="card-body p-4">
@@ -497,15 +497,16 @@
                             </div>
                             <div class="modal-body">
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-5.jpg">
-                                    <source src="assets/videos/module-video-1.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-5.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <h5>Deskripsi:</h5>
-                                <p>Kelas ini dirancang untuk pemula yang ingin memahami dasar-dasar cryptocurrency. Peserta akan belajar tentang konsep dasar, teknologi blockchain, dan cara bertransaksi menggunakan mata uang digital.</p>
+                                <p>Kelas ini dirancang untuk pemula yang ingin memahami lebih dalam tentang Ethereum—salah satu cryptocurrency terbesar di dunia. Peserta akan belajar tentang cara kerja Ethereum, perbedaan utamanya dengan Bitcoin, teknologi smart contract, serta faktor-faktor yang memengaruhi harga dan adopsinya di pasar global.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Pengenalan Dasar: Memahami konsep dasar cryptocurrency dan teknologi blockchain.</p>
-                                <p>- Praktik Langsung: Mendapatkan pengalaman langsung dalam melakukan transaksi cryptocurrency.</p>
-                                <p>- Sumber Daya: Akses ke materi pembelajaran dan panduan yang berguna untuk pemula.</p>
+                                <p>- Pemahaman Mendalam: Mengenal dasar-dasar Ethereum, termasuk konsep blockchain, smart contract, dan jaringan terdesentralisasi.</p>
+                                <p>- Analisis Nilai: Memahami faktor teknis dan fundamental yang memengaruhi pergerakan harga Ethereum, seperti permintaan pasar, pembaruan jaringan (seperti Ethereum 2.0), dan regulasi.</p>
+                                <p>- Simulasi dan Studi Kasus: Mempelajari simulasi transaksi dan menganalisis studi kasus dunia nyata penggunaan Ethereum dalam aplikasi DeFi (Decentralized Finance) dan NFT.</p>
+                                <p>- Sumber Daya Terpadu: Akses ke materi pembelajaran eksklusif, grafik analisis, dan panduan langkah demi langkah yang mudah dipahami oleh pemula.</p>
                             </div>
                         </div>
                     </div>
@@ -522,16 +523,16 @@
                             </div>
                             <div class="modal-body">
                                 <video class="card-img-top" controls poster="assets/img/video-thumbnail-6.jpg">
-                                    <source src="assets/videos/module-video-2.mp4" type="video/mp4">
+                                    <source src="assets/videos/module-video-6.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <h5>Deskripsi:</h5>
-                                <p>Kelas ini dirancang khusus untuk individu yang telah memiliki pemahaman dasar tentang cryptocurrency dan ingin memperluas wawasan serta keterampilan mereka dalam analisis pasar. Dalam kelas ini, peserta akan mempelajari berbagai aspek analisis pasar cryptocurrency yang lebih mendalam, termasuk:</p>
+                                <p>Kelas ini dirancang khusus untuk individu yang telah memahami dasar-dasar cryptocurrency dan ingin memperdalam keterampilan mereka dalam menganalisis pasar bullish Bitcoin. Dalam kelas ini, peserta akan mempelajari teknik-teknik analisis pasar secara menyeluruh, dengan fokus pada tren kenaikan harga, pemanfaatan indikator teknikal, serta pengaruh sentimen pasar terhadap pergerakan harga.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Analisis Teknikal: Memahami grafik harga, pola candlestick, dan indikator teknis yang digunakan untuk memprediksi pergerakan harga di masa depan. Peserta akan belajar cara membaca dan menganalisis data historis untuk mengidentifikasi tren dan titik masuk/keluar yang optimal.</p>
-                                <p>- Analisis Fundamental: Menggali faktor-faktor yang mempengaruhi nilai cryptocurrency, seperti berita pasar, perkembangan teknologi, dan regulasi. Peserta akan diajarkan cara mengevaluasi proyek cryptocurrency berdasarkan whitepaper, tim pengembang, dan adopsi pasar.</p>
-                                <p>- Penggunaan Alat Analisis: Memperkenalkan berbagai alat dan platform analisis yang dapat membantu dalam pengambilan keputusan investasi, seperti TradingView, CoinMarketCap, dan alat analisis on-chain. Peserta akan belajar cara memanfaatkan alat ini untuk mendapatkan wawasan yang lebih baik tentang pasar.</p>
-                                <p>- Strategi Perdagangan: Mengembangkan strategi perdagangan yang efektif berdasarkan analisis pasar, termasuk day trading, swing trading, dan investasi jangka panjang. Peserta akan diajarkan cara mengelola risiko dan memaksimalkan potensi keuntungan.</p>
+                                <p>- Analisis Teknikal Mendalam: Mempelajari cara membaca grafik harga Bitcoin, pola candlestick bullish, serta indikator teknikal seperti Moving Average, RSI, dan MACD untuk mengidentifikasi momentum pasar dan titik masuk terbaik.</p>
+                                <p>- Pemahaman Sentimen Pasar: Menelusuri pengaruh berita, media sosial, dan sentimen investor terhadap arah pergerakan pasar. Peserta akan belajar bagaimana membaca psikologi pasar dan mengenali tanda-tanda awal tren bullish.</p>
+                                <p>- Penggunaan Alat Profesional: Menggunakan platform seperti TradingView, CoinMarketCap, dan alat analisis on-chain untuk mendapatkan gambaran yang lebih akurat tentang kekuatan pasar bullish dan potensi breakout.</p>
+                                <p>- Strategi Bullish: Mengembangkan strategi investasi dan trading yang fokus pada fase pasar bullish, seperti trend-following dan breakout trading. Peserta juga akan diajarkan manajemen risiko untuk memaksimalkan keuntungan dan meminimalkan kerugian.</p>
                             </div>
                         </div>
                     </div>
@@ -552,13 +553,13 @@
                                     Your browser does not support the video tag.
                                 </video>
                                 <h5>Deskripsi:</h5>
-                                <p>Kelas ini dirancang untuk trader dan investor crypto yang ingin menguasai seni timing the market dengan tepat. Peserta akan mempelajari strategi-strategi canggih untuk mengidentifikasi momen terbaik masuk (entry) dan keluar (exit) pasar, memaksimalkan profit, dan meminimalkan risiko. Materi mencakup pendekatan teknis, fundamental, dan psikologis untuk membaca peluang di volatilitas pasar crypto.</p>
+                                <p>Kelas ini dirancang untuk trader dan investor crypto yang ingin memahami secara mendalam perbedaan antara meme coin dan altcoin serta cara memanfaatkan karakteristik masing-masing untuk strategi investasi yang lebih cerdas. Peserta akan mempelajari pendekatan analitis, fundamental, dan psikologis dalam menilai potensi dan risiko kedua jenis aset digital ini di tengah volatilitas pasar.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Memahami Siklus Pasar Crypto: Mempelajari pola siklus bull run, bear market, dan fase akumulasi. Peserta akan diajarkan cara mengenali tanda-tanda peralihan tren dan memanfaatkannya untuk timing yang optimal.</p>
+                                <p>- Memahami Kategori Crypto: Menjelaskan perbedaan utama antara altcoin dan meme coin, termasuk tujuan proyek, nilai utilitas, komunitas pendukung, dan fundamental masing-masing. Peserta akan mempelajari bagaimana keduanya berperan dalam ekosistem crypto.</p>
                                 <p>- Analisis Teknikal Lanjutan untuk Timing: Menggunakan indikator teknikal seperti RSI, MACD, Fibonacci retracement, dan volume trading untuk menentukan titik reversal atau breakout. Peserta akan berlatih membaca grafik waktu (timeframes) multi-level (1 jam, 4 jam, daily) guna mengkonfirmasi sinyal.</p>
-                                <p>- Analisis On-Chain & Sentimen Pasar: Memanfaatkan data on-chain (seperti aliran whale, aktivitas exchange, dan staking) serta alat analisis sentimen (misalnya Fear & Greed Index) untuk mengukur momentum pasar.</p>
-                                <p>- Strategi Entry & Exit yang Terukur: Belajar menyusun rencana trading berbasis risk-reward ratio, termasuk teknik scaling in/out, stop-loss dinamis, dan take-profit bertahap. Studi kasus mencakup cara menangkap pump sebelum airdrop atau news release.</p>
-                                <p>- Psikologi & Manajemen Emosi: Mengendalikan FOMO (Fear of Missing Out) dan greed saat volatilitas tinggi, serta disiplin dalam menjalankan strategi timing.</p>
+                                <p>- Mengukur Sentimen Pasar: Menggunakan alat dan data untuk menganalisis tren media sosial, komunitas (seperti Reddit & X), serta pergerakan harga jangka pendek yang sering terjadi pada meme coin.</p>
+                                <p>- Strategi Investasi Berdasarkan Tipe Koin: Mengembangkan pendekatan berbeda untuk altcoin berfundamental kuat dan meme coin berisiko tinggi—termasuk strategi early entry, hold jangka pendek, hingga exit sebelum hype mereda.</p>
+                                <p>- Psikologi dalam Berinvestasi pada Koin Viral: Memahami cara mengelola emosi saat berhadapan dengan hype, FOMO, dan spekulasi tinggi yang umum terjadi pada meme coin. Disiplin dalam memilih koin dengan potensi riil versus hanya sensasi sesaat.</p>
                             </div>
                         </div>
                     </div>
@@ -579,13 +580,13 @@
                                     Your browser does not support the video tag.
                                 </video>
                                 <h5>Deskripsi:</h5>
-                                <p>Kelas ini dirancang untuk investor dan trader crypto yang ingin mengidentifikasi aset-aset potensial yang siap mengalami rally bullish pada tahun 2025. Peserta akan mempelajari metodologi seleksi koin berdasarkan analisis fundamental, teknologi, siklus pasar, dan faktor makroekonomi. Dibimbing oleh praktisi berpengalaman, kelas ini akan membuka wawasan tentang bagaimana memprediksi koin-koin yang memiliki prospek pertumbuhan tinggi di tengah dinamika pasar yang kompetitif.</p>
+                                <p>Kelas ini dirancang untuk investor dan trader crypto yang ingin tetap aktif dan strategis saat menghadapi pasar bearish. Peserta akan mempelajari pendekatan yang realistis dan taktis untuk bertahan di kondisi pasar yang menekan, serta strategi jangka pendek dan menengah untuk mengelola risiko dan mencari peluang tersembunyi. Didorong oleh pengalaman praktisi, kelas ini akan memberikan panduan konkret untuk menjaga portofolio tetap sehat dalam tekanan pasar yang tinggi.</p>
                                 <P>Keuntungan:</P>
-                                <p>- Analisis Fundamental Mendalam: Mengevaluasi proyek crypto berdasarkan use case, teknologi inti, tim pengembang, dan roadmap.</p>
-                                <p>- Analisis Teknikal & Siklus Pasar: Membaca pola grafik historis (seperti halving effect, accumulation phases) untuk memprediksi momentum bullish.</p>
-                                <p>- Pemetaan Ekosistem & Tren Industri: Mengidentifikasi sektor crypto yang paling prospektif di 2025 (DeFi, AI, RWA, Layer-2, dll.)</p>
-                                <p>- Penggunaan Tools Analisis Khusus: Platform seperti Santiment, Glassnode, dan CoinGecko untuk melacak on-chain data dan social sentiment.</p>
-                                </p>
+                                <p>- Identifikasi Aset Bertahan & Berisiko Rendah: Belajar memilih aset kripto yang relatif stabil atau undervalued selama bear market dengan analisis fundamental yang selektif.</p>
+                                <p>- Strategi Trading Konservatif & Fleksibel: Menerapkan teknik seperti short-term scalping, dollar-cost averaging (DCA), serta menjaga cash reserve untuk antisipasi market reversal.</p>
+                                <p>- Membaca Sinyal dari Analisis Teknikal: Gunakan indikator seperti support-resistance, RSI oversold, dan moving average untuk menentukan titik beli saat koreksi.</p>
+                                <p>- Pantauan Data On-Chain & Sentimen Pasar: Menggunakan tools seperti Glassnode, Santiment, dan Fear & Greed Index untuk mengukur aktivitas whale, tekanan jual, dan peluang akumulasi.</p>
+                                <p>- Manajemen Risiko & Emosi dalam Bear Market: Belajar mengatur stop-loss, meminimalkan overtrading, serta menjaga psikologi trading agar tetap disiplin dan objektif di tengah tekanan pasar.</p>
                             </div>
                         </div>
                     </div>
