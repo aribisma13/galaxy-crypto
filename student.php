@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Student | Galaxy Crypto</title>
 
     <!-- Favicon-->
@@ -21,18 +19,21 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
-<Style>
-   #accordionSidebar {
-    background-image: url('assets/img/bg-dashboard.jpg'); /* Sesuaikan path dengan lokasi gambar */
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-</Style>
+    <Style>
+        #accordionSidebar {
+            background-image: url('assets/img/bg-dashboard.jpg');
+            /* Sesuaikan path dengan lokasi gambar */
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+    </Style>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -101,16 +102,8 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Heading -->
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-            <!-- Divider -->
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -137,7 +130,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" id="searchInput" placeholder="Search for students..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -158,7 +151,7 @@
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" id="searchInputMobile" placeholder="Search for students..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -183,9 +176,7 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -198,7 +189,7 @@
                                 <form action="add_student.php" method="POST" enctype="multipart/form-data">
                                     <div class="modal-header bg-primary text-white">
                                         <h5 class="modal-title" id="tambahDataModalLabel">Tambah Data Student</h5>
-                                        <button type="button white" class="close" data-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
@@ -235,6 +226,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Table Student</h1>
 
@@ -273,21 +265,21 @@
 
                                         if ($result->num_rows > 0) {
                                             while ($row = $result->fetch_assoc()) {
-                                                echo "<tr>";
-                                                echo "<td>" . $row['id_student'] . "</td>";
-                                                echo "<td>" . $row['nama'] . "</td>";
-                                                echo "<td>" . $row['alamat'] . "</td>";
-                                                echo "<td>" . $row['no_whatsapp'] . "</td>";
+                                                echo "<tr class='student-row'>";
+                                                echo "<td class='student-id'>" . $row['id_student'] . "</td>";
+                                                echo "<td class='student-name'>" . $row['nama'] . "</td>";
+                                                echo "<td class='student-address'>" . $row['alamat'] . "</td>";
+                                                echo "<td class='student-phone'>" . $row['no_whatsapp'] . "</td>";
                                                 echo "<td><img src='" . htmlspecialchars($row['foto'], ENT_QUOTES, 'UTF-8') . "' alt='Foto' style='width: 130px; height: 150px;'></td>";
-                                                echo "<td>" . $row['status_pembayaran'] . "</td>";
+                                                echo "<td class='student-payment'>" . $row['status_pembayaran'] . "</td>";
                                                 echo "<td>
                                                         <a href='edit_student.php?id=" . $row['id_student'] . "' class='btn btn-warning'>Edit</a>
                                                         <a href='delete_student.php?id=" . $row['id_student'] . "' class='btn btn-danger' onclick='return confirm(\"Yakin ingin menghapus?\")'>Delete</a>
-                                                        </td>";
+                                                      </td>";
                                                 echo "</tr>";
                                             }
                                         } else {
-                                            echo "<tr><td colspan='6'>Tidak ada data</td></tr>";
+                                            echo "<tr><td colspan='7' class='no-results'>Tidak ada data</td></tr>";
                                         }
                                         $conn->close();
                                         ?>
@@ -296,36 +288,83 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- Logout Modal-->
-                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                                <a class="btn btn-primary" href="login.php">Keluar</a>
-                            </div>
-                        </div>
-                    </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
+                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                    <a class="btn btn-primary" href="login.php">Keluar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <!-- Bootstrap core JavaScript-->
-                <script src="vendor/jquery/jquery.min.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                <!-- Core plugin JavaScript-->
-                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                <!-- Custom scripts for all pages-->
-                <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script>
+        $(document).ready(function() {
+            // Inisialisasi DataTable
+            $('#dataTable').DataTable({
+                "language": {
+                    "search": "Cari:",
+                    "lengthMenu": "Tampilkan _MENU_ data per halaman",
+                    "zeroRecords": "Tidak ada data yang ditemukan",
+                    "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+                    "infoEmpty": "Menampilkan 0 sampai 0 dari 0 data",
+                    "infoFiltered": "(disaring dari _MAX_ total data)",
+                    "paginate": {
+                        "first": "Pertama",
+                        "last": "Terakhir",
+                        "next": "Berikutnya",
+                        "previous": "Sebelumnya"
+                    }
+                }
+            });
+
+            // Fungsi pencarian untuk input desktop
+            $('#searchInput').keyup(function(){
+                $('#dataTable').DataTable().search($(this).val()).draw();
+            });
+
+            // Fungsi pencarian untuk input mobile
+            $('#searchInputMobile').keyup(function(){
+                $('#dataTable').DataTable().search($(this).val()).draw();
+            });
+        });
+    </script>
 
 </body>
 
