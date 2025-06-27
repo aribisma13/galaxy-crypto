@@ -18,6 +18,9 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -122,7 +125,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" id="searchInput" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -143,7 +146,7 @@
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" id="searchInputMobile" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -332,8 +335,42 @@
                     <!-- Core plugin JavaScript-->
                     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                    <!-- Custom scripts for all pages-->
-                    <script src="js/sb-admin-2.min.js"></script>
+                   <!-- Page level plugins -->
+                    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+                    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+                    <!-- Page level custom scripts -->
+                    <script>
+                        $(document).ready(function() {
+                            // Inisialisasi DataTable
+                            $('#dataTable').DataTable({
+                                "language": {
+                                    "search": "Cari:",
+                                    "lengthMenu": "Tampilkan _MENU_ data per halaman",
+                                    "zeroRecords": "Tidak ada data yang ditemukan",
+                                    "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+                                    "infoEmpty": "Menampilkan 0 sampai 0 dari 0 data",
+                                    "infoFiltered": "(disaring dari _MAX_ total data)",
+                                    "paginate": {
+                                        "first": "Pertama",
+                                        "last": "Terakhir",
+                                        "next": "Berikutnya",
+                                        "previous": "Sebelumnya"
+                                    }
+                                }
+                            });
+
+                            // Fungsi pencarian untuk input desktop
+                            $('#searchInput').keyup(function(){
+                                $('#dataTable').DataTable().search($(this).val()).draw();
+                            });
+
+                            // Fungsi pencarian untuk input mobile
+                            $('#searchInputMobile').keyup(function(){
+                                $('#dataTable').DataTable().search($(this).val()).draw();
+                            });
+                        });
+                    </script>
 
 </body>
 

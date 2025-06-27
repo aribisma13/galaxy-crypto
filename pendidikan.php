@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Pendidikan | Galaxy Crypto</title>
 
     <!-- Favicon-->
@@ -19,18 +18,24 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <style>
+        #accordionSidebar {
+            background-image: url('assets/img/bg-dashboard.jpg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        /* Form card style tetap sama */
+        .card.form-card {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 
-<body id="page-top">
-
-<Style>
-   #accordionSidebar {
-    background-image: url('assets/img/bg-dashboard.jpg'); /* Sesuaikan path dengan lokasi gambar */
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-</Style>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -118,7 +123,7 @@
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+       <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
@@ -134,7 +139,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" id="searchInput" placeholder="Search for education..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -155,7 +160,7 @@
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" id="searchInputMobile" placeholder="Search for education..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -180,9 +185,7 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -191,8 +194,8 @@
 
                     <!-- Page Heading -->
                     <div class="container mt-5">
-                        <h1 class="h3 mb-2 text-gray-800">Table Pendidikan</h1>
-                        <div class="card">
+                        <h1 class="h3 mb-4 text-gray-800">Table Pendidikan</h1>
+                        <div class="card form-card">
                             <div class="card-header bg-primary text-white">Form Tambah Data Pendidikan</div>
                             <div class="card-body">
                                 <form action="add_pendidikan.php" method="POST">
@@ -226,7 +229,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="jenis_kursus">Jenis Kursus</label>
-                                        <input type="text" class="form-control" id="jenis_kursus" name="jenis_kursus" placeholder="Masukkan Jenis Kursus" required>
+                                        <select name="jenis_kursus" id="jenis_kursus" class="form-control" required>
+                                            <option value="">-- Pilih Jenis Kursus --</option>
+                                            <option value="Beginner Trading Cryptocurrency">Beginner Trading Cryptocurrency</option>
+                                            <option value="Middle Trading Cryptocurrency">Middle Trading Cryptocurrency</option>
+                                            <option value="Profesional Trading Cryptocurrency">Profesional Trading Cryptocurrency</option>
+                                            <option value="Premium Trading Cryptocurrency">Premium Trading Cryptocurrency</option>
+                                            <option value="Lainnya">Lainnya</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="tanggal_mulai">Tanggal Mulai</label>
@@ -244,65 +254,67 @@
                     </div>
 
                     <!-- DataTales Example -->
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th>ID Student</th>
-                                        <th>Nama Student</th>
-                                        <th>Jenis Kursus</th>
-                                        <th>Tanggal Mulai</th>
-                                        <th>Tanggal Selesai</th>
-                                        <th>Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    // Koneksi ke database
-                                    $conn = new mysqli("localhost", "root", "", "crypto");
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID Pendidikan</th>
+                                            <th>Nama Student</th>
+                                            <th>Jenis Kursus</th>
+                                            <th>Tanggal Mulai</th>
+                                            <th>Tanggal Selesai</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        // Koneksi ke database
+                                        $conn = new mysqli("localhost", "root", "", "crypto");
 
-                                    // Cek koneksi
-                                    if ($conn->connect_error) {
-                                        die("Koneksi gagal: " . $conn->connect_error);
-                                    }
-
-                                    // Ambil data dari tabel pendidikan
-                                    $sql = "SELECT p.id_pendidikan, s.nama AS student_name, p.jenis_kursus, p.tanggal_mulai, p.tanggal_selesai
-                                            FROM pendidikan p
-                                            INNER JOIN student s ON p.id_student = s.id_student";
-                                    $result = $conn->query($sql);
-
-                                    // Cek apakah ada data
-                                    if ($result->num_rows > 0) {
-                                        // Loop melalui data dan tampilkan di tabel
-                                        while ($row = $result->fetch_assoc()) {
-                                            echo "<tr>";
-                                            echo "<td>" . $row['id_pendidikan'] . "</td>";
-                                            echo "<td>" . $row['student_name'] . "</td>";
-                                            echo "<td>" . $row['jenis_kursus'] . "</td>";
-                                            echo "<td>" . $row['tanggal_mulai'] . "</td>";
-                                            echo "<td>" . $row['tanggal_selesai'] . "</td>";
-                                            echo "<td>
-                                                <a href='edit_pendidikan.php?id_pendidikan=" . $row['id_pendidikan'] . "' class='btn btn-warning'>Edit</a>
-                                                <a href='delete_pendidikan.php?id_pendidikan=" . $row['id_pendidikan'] . "' onclick=\"return confirm('Apakah Anda yakin ingin menghapus data ini?')\" class='btn btn-danger'>Delete</a>
-                                            </td>";
-                                            echo "</tr>";
+                                        // Cek koneksi
+                                        if ($conn->connect_error) {
+                                            die("Koneksi gagal: " . $conn->connect_error);
                                         }
-                                    } else {
-                                        echo "<tr><td colspan='5' class='text-center'>Data tidak tersedia</td></tr>";
-                                    }
-                                    $conn->close();
-                                    ?>
-                                </tbody>
-                            </table>
+
+                                        // Ambil data dari tabel pendidikan
+                                        $sql = "SELECT p.id_pendidikan, s.nama AS student_name, p.jenis_kursus, p.tanggal_mulai, p.tanggal_selesai
+                                                FROM pendidikan p
+                                                INNER JOIN student s ON p.id_student = s.id_student";
+                                        $result = $conn->query($sql);
+
+                                        // Cek apakah ada data
+                                        if ($result->num_rows > 0) {
+                                            // Loop melalui data dan tampilkan di tabel
+                                            while ($row = $result->fetch_assoc()) {
+                                                echo "<tr class='pendidikan-row'>";
+                                                echo "<td class='pendidikan-id'>" . $row['id_pendidikan'] . "</td>";
+                                                echo "<td class='student-name'>" . $row['student_name'] . "</td>";
+                                                echo "<td class='jenis-kursus'>" . $row['jenis_kursus'] . "</td>";
+                                                echo "<td class='tanggal-mulai'>" . $row['tanggal_mulai'] . "</td>";
+                                                echo "<td class='tanggal-selesai'>" . $row['tanggal_selesai'] . "</td>";
+                                                echo "<td>
+                                                    <a href='edit_pendidikan.php?id_pendidikan=" . $row['id_pendidikan'] . "' class='btn btn-warning'>Edit</a>
+                                                    <a href='delete_pendidikan.php?id_pendidikan=" . $row['id_pendidikan'] . "' onclick=\"return confirm('Apakah Anda yakin ingin menghapus data ini?')\" class='btn btn-danger'>Delete</a>
+                                                </td>";
+                                                echo "</tr>";
+                                            }
+                                        } else {
+                                            echo "<tr><td colspan='6' class='no-results'>Data tidak tersedia</td></tr>";
+                                        }
+                                        $conn->close();
+                                        ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- /.container-fluid -->
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -320,15 +332,73 @@
                     </div>
                 </div>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
+                <!-- DataTables JavaScript -->
+                <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+                <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
+
+                <script>
+                    $(document).ready(function() {
+                        // Inisialisasi DataTable
+                        var table = $('#dataTable').DataTable({
+                            "paging": true,
+                            "lengthChange": true,
+                            "searching": true,
+                            "ordering": true,
+                            "info": true,
+                            "autoWidth": false,
+                            "responsive": true,
+                            "language": {
+                                "search": "Cari:",
+                                "lengthMenu": "Tampilkan _MENU_ data per halaman",
+                                "zeroRecords": "Tidak ada data yang ditemukan",
+                                "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+                                "infoEmpty": "Menampilkan 0 sampai 0 dari 0 data",
+                                "infoFiltered": "(disaring dari _MAX_ total data)",
+                                "paginate": {
+                                    "first": "Pertama",
+                                    "last": "Terakhir",
+                                    "next": "Berikutnya",
+                                    "previous": "Sebelumnya"
+                                }
+                            }
+                        });
+
+                        // Fungsi pencarian untuk input desktop
+                        $('#searchInput').keyup(function(){
+                            table.search($(this).val()).draw();
+                        });
+
+                        // Fungsi pencarian untuk input mobile
+                        $('#searchInputMobile').keyup(function(){
+                            table.search($(this).val()).draw();
+                        });
+
+                        // Highlight hasil pencarian
+                        table.on('draw', function() {
+                            var searchTerm = table.search();
+                            if (searchTerm !== '') {
+                                $('.student-name, .jenis-kursus, .tanggal-mulai, .tanggal-selesai').each(function() {
+                                    var text = $(this).text();
+                                    var regex = new RegExp(searchTerm, 'gi');
+                                    var highlightedText = text.replace(regex, function(match) {
+                                        return '<span class="search-highlight">' + match + '</span>';
+                                    });
+                                    $(this).html(highlightedText);
+                                });
+                            }
+                        });
+                    });
+                </script>
 
 </body>
 
