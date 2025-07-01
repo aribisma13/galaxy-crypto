@@ -190,7 +190,7 @@
                                     <div class="modal-header bg-primary text-white">
                                         <h5 class="modal-title" id="tambahDataModalLabel">Tambah Data Student</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                            <span aria-hidden="true">×</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
@@ -213,7 +213,7 @@
                                         <div class="form-group">
                                             <label for="status_pembayaran">Status Pembayaran</label>
                                             <select class="form-control" id="status_pembayaran" name="status_pembayaran" required>
-                                                <option value="Belum Lunas">Belum Lunas</option>
+                                                <option value="Deposit">Deposit</option>
                                                 <option value="Lunas">Lunas</option>
                                             </select>
                                         </div>
