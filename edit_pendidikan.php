@@ -88,8 +88,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="form-group">
                         <label for="jenis_kursus">Jenis Kursus</label>
-                        <input type="text" class="form-control" id="jenis_kursus" name="jenis_kursus" value="<?= htmlspecialchars($data['jenis_kursus']); ?>" required>
-                    </div>
+                            <select name="jenis_kursus" id="jenis_kursus" class="form-control" required>
+                                <option value="">-- Pilih Jenis Kursus --</option>
+                                <option value="Beginner Trading Cryptocurrency" <?= $data['jenis_kursus'] == 'Beginner Trading Cryptocurrency' ? 'selected' : '' ?>>Beginner Trading Cryptocurrency</option>
+                                <option value="Middle Trading Cryptocurrency" <?= $data['jenis_kursus'] == 'Middle Trading Cryptocurrency' ? 'selected' : '' ?>>Middle Trading Cryptocurrency</option>
+                                <option value="Profesional Trading Cryptocurrency" <?= $data['jenis_kursus'] == 'Profesional Trading Cryptocurrency' ? 'selected' : '' ?>>Profesional Trading Cryptocurrency</option>
+                                <option value="Premium Trading Cryptocurrency" <?= $data['jenis_kursus'] == 'Premium Trading Cryptocurrency' ? 'selected' : '' ?>>Premium Trading Cryptocurrency</option>
+                                <option value="Lainnya" <?= $data['jenis_kursus'] == 'Lainnya' ? 'selected' : '' ?>>Lainnya</option>
+                            </select>
+                        </div>
 
                     <div class="form-group">
                         <label for="tanggal_mulai">Tanggal Mulai</label>
