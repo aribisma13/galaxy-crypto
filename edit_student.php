@@ -55,11 +55,23 @@ $conn->close();
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit Data Student</title>
+
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <title>Edit Data Student</title>
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript (Load jQuery first)-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
 </head>
 
 <body>
@@ -77,21 +89,21 @@ $conn->close();
                     <div class="modal-body">
                         <div class="mb-3">
                             <label for="editNama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="editNama" name="nama" value="<?= $data['nama'] ?>" required>
+                            <input type="text" class="form-control" id="editNama" name="nama" value="<?= htmlspecialchars($data['nama'], ENT_QUOTES, 'UTF-8') ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="editAlamat" class="form-label">Alamat</label>
-                            <textarea class="form-control" id="editAlamat" name="alamat" rows="3" required><?= $data['alamat'] ?></textarea>
+                            <textarea class="form-control" id="editAlamat" name="alamat" rows="3" required><?= htmlspecialchars($data['alamat'], ENT_QUOTES, 'UTF-8') ?></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="editNoWhatsapp" class="form-label">No WhatsApp</label>
-                            <input type="text" class="form-control" id="editNoWhatsapp" name="no_whatsapp" value="<?= $data['no_whatsapp'] ?>" required>
+                            <input type="text" class="form-control" id="editNoWhatsapp" name="no_whatsapp" value="<?= htmlspecialchars($data['no_whatsapp'], ENT_QUOTES, 'UTF-8') ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="editFoto" class="form-label">Foto</label>
                             <input type="file" class="form-control" id="editFoto" name="foto">
                             <?php if ($data['foto']): ?>
-                                <img src="<?= $data['foto'] ?>" alt="Foto" class="img-thumbnail mt-2" width="100">
+                                <img src="<?= htmlspecialchars($data['foto'], ENT_QUOTES, 'UTF-8') ?>" alt="Foto" class="img-thumbnail mt-2" width="100">
                             <?php endif; ?>
                         </div>
                         <!-- Pilihan Status Pembayaran -->
@@ -99,7 +111,7 @@ $conn->close();
                             <label for="statusPembayaran" class="form-label">Status Pembayaran</label>
                             <select class="form-control" id="statusPembayaran" name="status_pembayaran" required>
                                 <option value="Lunas" <?= ($data['status_pembayaran'] == 'Lunas') ? 'selected' : ''; ?>>Lunas</option>
-                                <option value="Belum Lunas" <?= ($data['status_pembayaran'] == 'Belum Lunas') ? 'selected' : ''; ?>>Belum Lunas</option>
+                                <option value="Deposit" <?= ($data['status_pembayaran'] == 'Deposit') ? 'selected' : ''; ?>>Deposit</option>
                             </select>
                         </div>
                     </div>
@@ -112,15 +124,6 @@ $conn->close();
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
 </body>
 
 </html>
