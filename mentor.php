@@ -18,18 +18,19 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <style>
+        #accordionSidebar {
+            background-image: url('assets/img/bg-dashboard.jpg');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
-
-<body id="page-top">
-
-<Style>
-   #accordionSidebar {
-    background-image: url('assets/img/bg-dashboard.jpg'); /* Sesuaikan path dengan lokasi gambar */
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-</Style>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -117,10 +118,7 @@
         </ul>
         <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
+        <!-- Main Content -->
             <div id="content">
 
                 <!-- Topbar -->
@@ -134,7 +132,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" id="searchInput" placeholder="Search for mentors..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -155,7 +153,7 @@
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" id="searchInputMobile" placeholder="Search for mentors..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -182,8 +180,11 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- Page Content -->
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
                 <div class="container-fluid">
+
                     <!-- Modal Tambah Mentor -->
                     <div class="modal fade" id="tambahMentorModal" tabindex="-1" role="dialog" aria-labelledby="tambahMentorModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -246,7 +247,7 @@
                         </div>
                     </div>
 
-                    <!-- Page Heading -->
+                   <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Table Mentor</h1>
 
                     <!-- DataTales Example -->
@@ -318,28 +319,36 @@
                         </div>
                     </div>
                 </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                    <a class="btn btn-primary" href="login.php">Keluar</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin Ingin Keluar?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Pilih "Keluar" di bawah jika Anda siap untuk mengakhiri sesi Anda saat ini.</div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-                                <a class="btn btn-primary" href="login.php">Keluar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -347,8 +356,45 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script>
+        $(document).ready(function() {
+            // Inisialisasi DataTable
+            $('#dataTable').DataTable({
+                "language": {
+                    "search": "Cari:",
+                    "lengthMenu": "Tampilkan _MENU_ data per halaman",
+                    "zeroRecords": "Tidak ada data yang ditemukan",
+                    "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+                    "infoEmpty": "Menampilkan 0 sampai 0 dari 0 data",
+                    "infoFiltered": "(disaring dari _MAX_ total data)",
+                    "paginate": {
+                        "first": "Pertama",
+                        "last": "Terakhir",
+                        "next": "Berikutnya",
+                        "previous": "Sebelumnya"
+                    }
+                }
+            });
+
+            // Fungsi pencarian untuk input desktop
+            $('#searchInput').keyup(function(){
+                $('#dataTable').DataTable().search($(this).val()).draw();
+            });
+
+            // Fungsi pencarian untuk input mobile
+            $('#searchInputMobile').keyup(function(){
+                $('#dataTable').DataTable().search($(this).val()).draw();
+            });
+        });
+    </script>
 
 </body>
 
